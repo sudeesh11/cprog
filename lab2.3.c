@@ -7,8 +7,8 @@ int main(){
 	printf("Enter three numbers:");
 	scanf("%d %d %d", &a , &b, &c);
 	
-	/* printf("In forward order ");
-	printf("%d %d %d", a , b, c); */
+	printf("In forward order ");
+	printf("%d %d %d", a , b, c);
 	printf("In reversed order ");
 	printf("%d %d %d", c, b, a);
 }
