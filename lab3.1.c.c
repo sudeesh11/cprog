@@ -6,10 +6,10 @@ int main() {
     float weight, height;
 
     printf("Enter your name: ");
-    fgets(name, 50, stdin); 
+    scanf("%s", name);
 
     printf("Enter your address: ");
-    fgets(address, 100, stdin);
+    scanf("%s", address);
 
     printf("Enter your age: ");
     scanf("%d", &age);
@@ -21,8 +21,8 @@ int main() {
     scanf("%f", &height);
 
     printf("\nYour Information:\n");
-    printf("Name: %s", name);
-    printf("Address: %s", address);
+    printf("Name: %s\n", name);
+    printf("Address: %\ns", address);
     printf("Age: %d years\n", age);
     printf("Weight: %.2f kg\n", weight);
     printf("Height: %.2f meters\n", height);
