@@ -16,7 +16,7 @@ int main()
 	FILE *fptr;
 	fptr=fopen("d:/student.txt","w");
 	
-for(i=0; i<2; i++)
+for(i=0; i<3; i++)
 	{
 		printf("Name: \t");
 		scanf("%s", &st[i].name);
