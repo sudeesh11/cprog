@@ -1,4 +1,4 @@
-/*Library function sqrt() computes the square root*/
+
 #include <stdio.h>
 #include <math.h> /*This is needed to use sqrt() function*/
 int main()
