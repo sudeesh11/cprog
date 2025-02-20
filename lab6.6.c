@@ -1,28 +1,21 @@
-#include<stdio.h>
-int global = 10; // this is a global variable and can be accessed in all functions in the same file
+#include <stdio.h>
 
-void func() {
-static int static_var = 5;
-int local = 5;
+void function() {
+  int a = 10;
+  printf("Local: %d\n", a);
 
-
-
-
-printf("Global: %d\n", global);             // global variable is accessible in all functions in the same file
-printf("Static: %d\n", static_var);         // static variable retains its value between function calls
-printf("Local: %d\n", local);               // local variable is accessible only within the function it is declared in
-
-global++;
-static_var++;
-local++;
+  static int b = 0;
+  b++;
+  printf("Static: %d\n", b);
 }
+
+int c = 5;
 
 int main() {
-func();
-func();
-func();
+  printf("Global: %d\n", c);
 
+  function();
+  function();
 
-return 0;
+  return 0;
 }
-
