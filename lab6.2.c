@@ -1,21 +1,19 @@
-#include<stdio.h>
-int fact(int n) {
-if (n == 0) {
-return 1;
-} else {
-return n * fact(n - 1);
-}
-}
+#include <stdio.h>
+
+int addnum(int n);
 
 int main() {
-int n, r;
-printf("Enter n and r: ");
-scanf("%d %d", &n, &r);
 
+  int n;
+  printf("Enter a positive integer: ");
+  scanf("%d", &n);
+  printf("Sum = %d", addnum(n));
+  return 0;
+}
 
-
-printf("Permutation: %d\n", fact(n) / fact(n - r));
-printf("Combination: %d\n", fact(n) / (fact(r) * fact(n - r)));
-
-return 0;
+int addnum(int n) {
+  if (n != 0)
+    return n + addnum(n - 1);
+  else
+    return n;
 }
