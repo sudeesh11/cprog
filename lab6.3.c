@@ -1,25 +1,21 @@
 #include<stdio.h>
-int fib(int n) {
+int fact(int n) {
 if (n == 0) {
-return 0;
-} else if (n == 1) {
 return 1;
 } else {
-return fib(n - 1) + fib(n - 2);
+return n * fact(n - 1);
 }
 }
 
 int main() {
-int n, i;
-printf("Enter a number: ");
-scanf("%d", &n);
+int n, r;
+printf("Enter n and r: ");
+scanf("%d %d", &n, &r);
 
 
-printf("Fibonacci series up to %d: ", n);
-for ( i = 0; fib(i) <= n; i++) {
-    printf("%d ", fib(i));
-}
-printf("\n");
+
+printf("Permutation: %d\n", fact(n) / fact(n - r));
+printf("Combination: %d\n", fact(n) / (fact(r) * fact(n - r)));
 
 return 0;
 }
