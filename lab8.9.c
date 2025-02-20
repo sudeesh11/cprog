@@ -2,17 +2,15 @@
 
 #include<stdio.h>
 #include<string.h>
-//#include<stdbool.h>
+
 int main(){
 	char str1[10], str2[10];
 	int len1, len2, i;
 	bool a = false;
 	
-	printf("Enter first string: ");
-	gets(str1);
-	
-	printf("\nEnter second string: ");
-	gets(str2);
+	printf("Enter two strings: ");
+	scanf("%s %s", str1, str2 ); 
+
 	
 	len1 = strlen(str1);
 	len2 = strlen(str2);
