@@ -15,7 +15,8 @@ int main()
      if (array[c] == search)
 {
 printf("%d is present at location %d.\n", search, c+1); break;
-} }
+} 
+}
    if (c == n)
      printf("%d is not present in array.\n", search);
  system("pause");
