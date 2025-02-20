@@ -1,4 +1,4 @@
-This program is solve using for loop*/
+
 #include <stdio.h>
 int main()
 {
