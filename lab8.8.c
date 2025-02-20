@@ -7,11 +7,8 @@ int main()
 	int len1=0, len2=0, i;
 	
 	printf("Enter strings: ");
-	gets(st1);
+	scanf("%s %s",st1, st2);
 	
-	printf("Enter strings: ");
-	gets(st2);
-		
 	for(i=0; st1[i]!='\0'; i++)
 	{
 		len1++;
